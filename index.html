@@ -18,33 +18,51 @@
   </nav>
   <!-- add logo and Menu -->
   </header>
-  <section class="hero-section">
-    <h1>Découvrez comment nos délicieux produits sont fabriqués</h1>
-    <video controls loop  autoplay>
-      <source src="./images/istock-1083459308_preview.mp4">
-    </video>
-  </section>
-  <section class="products">
-    <h2>La Gamme des produits Nutrigood</h2>
-    <div class="product">
-      <h3>Le smoothie <span class="detox">Detox</span></h2>
-      <img class="product-img" src="./images/detox.JPG" alt="">
-      <p>Que dites vous d'une petite detox poure retrouver la forme ?
-        Un subtil mélange de <span class="detox"> pomme, concombre, gingembre, épinard, menthe</span> pour drainer et éliminer les toxines et vous aider à perdre du poids.
-      </p>
-    </div>
-    <div class="product">
-      <h3>Le Smoothie <span class="energy">Energy Boost</span></h2>
-      <img class="product-img" src="./images/energy.JPG" alt="">
-      <p>Du <span class="energy">bissap infusé</span>, une touche de <span class="energy">menthe</span>, des notes d'<span class="energy">ananas</span>, de <span class="energy">banane</span>, une dose de <span class="energy">gingembre</span>, un soupçon de <span class="energy">caféine</span>: <br/>un <span class="energy">cocktail explosif</span>
-      </p>
-    </div>
-    <div class="product">
-      <h3>Le Smoothie  <span class="tropical">Tropical Mix</span></h2>
-      <img class="product-img" src="./images/tropical.JPG" alt="">
-      <p>Laissez vous transporter par les notes fruitées <span class="tropical">d'orange, de carotte, de banane, pêche, pomme</span> et savourez les délicieux morceaux <span class="tropical">d'ananas</span>
-      </p>
-    </div>
+  <main>
+    <section class="hero-section">
+      <h2> Comment nos délicieux produits sont fabriqués</h2>
+      <video controls loop  autoplay>
+        <source src="./images/istock-1083459308_preview.mp4">
+      </video>
+    </section>
+    <section class="products">
+      <h2>La Gamme des produits Nutrigood</h2>
+      <h3>Le smoothie <span class="detox">Detox</span></h3>
+      <div class="product">
+        <img class="product-img" src="./images/detox.JPG" alt="">
+        <p>Que dites vous d'une petite detox poure retrouver la forme ?
+          Un subtil mélange de <span class="detox"> pomme, concombre, gingembre, épinard, menthe</span> pour drainer et éliminer les toxines et vous aider à perdre du poids.
+        </p>
+      </div>
+      <h3>Le Smoothie <span class="energy">Energy Boost</span></h3>
+      <div class="product ">
+        <p>Du <span class="energy">bissap infusé</span>, une touche de <span class="energy">menthe</span>, des notes d'<span class="energy">ananas</span>, de <span class="energy">banane</span>, une dose de <span class="energy">gingembre</span>, un soupçon de <span class="energy">caféine</span>: <br/> <span class="energy">un cocktail explosif</span>
+        </p>
+        <img class="product-img" src="./images/energy.JPG" alt="">
+        
+      </div>
+      <h3>Le Smoothie  <span class="tropical">Tropical Mix</span></h3>
+      <div class="product product-tropical">
+        <img class="product-img" src="./images/tropical.JPG" alt="">
+        <p>Laissez vous transporter par les notes fruitées <span class="tropical">d'orange, de carotte, de banane, pêche, pomme</span> et savourez les délicieux morceaux <span class="tropical">d'ananas</span>
+        </p>
+      </div>
+    </section>
+  </main>
+  <section class="contact-us">
+    <h2>Nous contacter</h2>
+    <form action="#">
+      <label for="customerName">Nom</label>
+      <input type="text" id="customerName" name="customerName" required="" >
+      <label for="customerEmail">Email</label>
+      <input type="email" id="customerEmail" name="customerEmail" required="">
+      <label for="customerPhone">Téléphone</label>
+      <input type="tel" id="customerPhone" name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      <label for="customerNote">Message</label>
+      <textarea rows="4" id="customerNote" name="customerNote" required=""></textarea>
+      <button id="customerOrder">Envoyer</button>
+    </form>
+
   </section>
 </body>
 </html>

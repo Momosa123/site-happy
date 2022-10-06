@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
 *{
   box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+
+}
+
+main{
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y;
+}
+
+h2, h3{
+  text-align: center;
+}
+
+section{
+  /* text-align: center; */
+  padding-bottom: 3rem;
 }
 
 body, ul, ol, dl {
@@ -14,16 +34,17 @@ li a{
   padding: 0.25rem;
   color: rgb(221, 146, 8);
   text-decoration: none;
+  transition: .2s all ease-in-out;  
 }
 
 li a:hover{
-  color: black;
+  color: rgb(2, 95, 2);
   background-color: rgb(180, 126, 25);
 }
 /* Header styling */
 header{
-  padding: 0.5rem 0 2rem ;
- 
+  padding: 0.5rem 0 1rem ;
+ background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,16 +57,199 @@ li:first-child{
   margin-bottom: 0.5rem;
 }
 .logo{
-  max-width: 20%;
+  max-width: 25%;
 }
 
 /* hero video styling  */
-.hero-section{
-  padding: 2rem;
-  background-color: orange;
+h2{
+  margin-top: 0;
+  padding-top: 0.5rem;
+  text-align: center;
+  color: green;
+  font-size: 1.7rem;
 }
+
+.hero-section{
+  /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; */
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+  /* background-color: white; */
+  padding-top: 1rem;
+}
+
 video{
   display: block;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
+}
+
+/* Gamme de produits nutrigood */
+.products{
+  /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; */
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+  /* background-color: rgb(250, 191, 83); */
+}
+
+h3{
+  font-size: 1.5rem;
+}
+.product{
+
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  max-width: 50%;
+}
+
+.product-tropical{
+}
+
+.product-img{
+  max-width: 100%;
+}
+
+span{
+  font-weight: bold;
+}
+.detox{
+  color: rgb(4, 107, 4);
+}
+.energy{
+  
+  color: rgb(137, 15, 153);
+}
+
+.tropical{
+  color: rgb(241, 167, 28);;
+}
+
+/* Partie contact */
+root{
+  --form-bg: #f8f4e5;
+  --form-border: #f45702;
+  --form-shadow: #dfae4b;
+  --form-focus: #f45702;
+  --font-size: 12px;
+  --font-face: 'Spartan';
+  --font-color: #2A293E
+}
+.contact-us{
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: var(--font-face);
+}
+
+form{
+  width: 70%;
+
+  border-top: 10px solid orange;
+}
+
+label, input, textarea{
+  /* background-color: #f8f4e5; */
+  display: block;
+  width: 100%;
+  font-size: var(--font-size);
+  line-height: var(--font-size) * 2;
+  font-family: var(--font-face)
+}
+
+input{
+  margin-bottom: var(--font-size) * 2
+}
+  
+em{
+  color: var(--form-border);
+  font-weight: bold}
+  
+input, textarea{
+  border: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: var(--form-bg);
+  padding-left: 5px;
+  outline: none
+}
+  
+input:focus, textarea:focus{
+  border: 2px solid orangered
+}
+ 
+textarea{
+  resize: none
+}
+  
+button{
+  margin-top: 1rem;
+  display: block;
+  float: right;
+  line-height: var(--font-size) * 2;
+  padding: 0 20px;
+  border: none;
+  background: orange;
+  color: white;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none
+}
+  
+  button:hover{
+    cursor: pointer;
+    background: inherit;
+    color: orange;
+    border-bottom: 2px solid orange
+  }
+  
+::selection {
+  background: rgb(255, 199, 184)
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  main{
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  round;
+  }
+  /* hero video styling  */
+.logo{
+  width: 10%;
+}
+
+video{
+  width: 70%;
+}
+
+/* Gamme de produits nutrigood */
+.products{
+  /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; */
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 2rem;
+  max-width: 100%;
+}
+
+.product-tropical{
+}
+
+.product-img{
+  max-width: 20%
+}
+
+p{
+  max-width: 30%;
+  font-size: 2rem;
+}
+/* contact form */
+form{
+  width: 40%;
+}
 }
