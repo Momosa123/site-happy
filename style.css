@@ -19,7 +19,7 @@ h2, h3{
 
 section{
   /* text-align: center; */
-  padding-bottom: 3rem;
+  padding-bottom: 1rem 1rem 3rem;
 }
 
 body, ul, ol, dl {
@@ -74,7 +74,7 @@ h2{
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: overlay;
   /* background-color: white; */
-  padding-top: 1rem;
+
 }
 
 video{
