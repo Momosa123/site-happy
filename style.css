@@ -19,16 +19,20 @@ h2, h3{
 
 section{
   /* text-align: center; */
-  padding-bottom: 1rem 1rem 3rem;
+  padding-bottom: 1rem 2rem 3rem;
 }
 
 body, ul, ol, dl {
 	margin: 0;
 }
 
+footer{
+  padding: 1rem 0 2rem;
+}
 li{
   list-style-type: none;
 }
+
 
 li a{
   padding: 0.25rem;
@@ -62,6 +66,7 @@ li:first-child{
 
 /* hero video styling  */
 h2{
+  
   margin-top: 0;
   padding-top: 0.5rem;
   text-align: center;
@@ -185,7 +190,7 @@ button{
   margin-top: 1rem;
   display: block;
   float: right;
-  line-height: var(--font-size) * 2;
+  line-height: 1.5rem;
   padding: 0 20px;
   border: none;
   background: orange;
@@ -237,11 +242,13 @@ video{
   max-width: 100%;
 }
 
-.product-tropical{
-}
-
 .product-img{
   max-width: 20%
+}
+
+
+.energy-img{
+  order: 4;
 }
 
 p{
