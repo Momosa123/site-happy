@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+
+body, ul, ol, dl {
+	margin: 0;
+}
+
+li{
+  list-style-type: none;
+}
+
+li a{
+  padding: 0.25rem;
+  color: rgb(221, 146, 8);
+  text-decoration: none;
+}
+
+li a:hover{
+  color: black;
+  background-color: rgb(180, 126, 25);
+}
+/* Header styling */
+header{
+  padding: 0.5rem 0 2rem ;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav{
+  margin-right: 1.5rem;
+}
+li:first-child{
+  margin-bottom: 0.5rem;
+}
+.logo{
+  max-width: 20%;
+}
+
+/* hero video styling  */
+.hero-section{
+  padding: 2rem;
+  background-color: orange;
+}
+video{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
