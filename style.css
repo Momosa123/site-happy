@@ -6,12 +6,14 @@
 
 body{
   margin: 0;
-
+ 
 }
 
-main{
+/* main{
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y;
-}
+  background-color: rgba(255, 255, 255, 0.85);
+  background-blend-mode: overlay;
+} */
 
 h2, h3{
   text-align: center;
@@ -19,12 +21,17 @@ h2, h3{
 
 section{
   /* text-align: center; */
-  padding: 1rem 2rem 3rem;
+  padding: 1rem 2rem 2rem;
 }
 
 section:last-child{
   padding-bottom: 1rem;
 }
+/* p:last-child{
+  margin-bottom: 0;
+} */
+
+
 body, ul, ol, dl {
 	margin: 0;
 }
@@ -79,10 +86,8 @@ h2{
 
 .hero-section{
   /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; */
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: overlay;
+  
   /* background-color: white; */
-
 }
 
 video{
@@ -92,14 +97,15 @@ video{
 }
 
 /* Gamme de produits nutrigood */
-.products{
-  /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; */
-  background-color: rgba(255, 255, 255, 0.8);
+.products-section{
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; 
+  background-color: rgba(255, 255, 255, 0.9);
   background-blend-mode: overlay;
-  /* background-color: rgb(250, 191, 83); */
+ 
 }
 
 h3{
+  margin: 0;
   font-size: 1.5rem;
 }
 .product{
@@ -217,9 +223,9 @@ button{
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  main{
+  /* main{
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  round;
-  }
+  } */
   /* hero video styling  */
 .logo{
   width: 10%;
