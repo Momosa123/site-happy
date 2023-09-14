@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
- 
 }
 
 /* main{
@@ -15,68 +14,69 @@ body{
   background-blend-mode: overlay;
 } */
 
-h2, h3{
+h2,
+h3 {
   text-align: center;
 }
 
-section{
+section {
   /* text-align: center; */
   padding: 1rem 2rem 2rem;
 }
 
-section:last-child{
+section:last-child {
   padding-bottom: 1rem;
 }
 /* p:last-child{
   margin-bottom: 0;
 } */
 
-
-body, ul, ol, dl {
-	margin: 0;
+body,
+ul,
+ol,
+dl {
+  margin: 0;
 }
 
-footer{
+footer {
   padding: 1rem 0 2rem;
 }
-li{
+li {
   list-style-type: none;
 }
 
-
-li a{
+li a {
   padding: 0.25rem;
   color: rgb(221, 146, 8);
   text-decoration: none;
-  transition: .2s all ease-in-out;  
+  transition: 0.2s all ease-in-out;
 }
 
-li a:hover{
+li a:hover {
   color: rgb(2, 95, 2);
   background-color: rgb(180, 126, 25);
 }
 /* Header styling */
-header{
-  padding: 0.5rem 0 1rem ;
- background-color: white;
+header {
+  padding: 0.5rem 0 1rem;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav{
+nav {
   margin-right: 1.5rem;
 }
-li:first-child{
+li:first-child {
   margin-bottom: 0.5rem;
 }
-.logo{
+.logo {
   max-width: 25%;
 }
 
 /* hero video styling  */
-h2{
-  
+h2 {
   margin-top: 0;
   padding-top: 0.5rem;
   text-align: center;
@@ -84,70 +84,69 @@ h2{
   font-size: 1.7rem;
 }
 
-.hero-section{
+.hero-section {
   /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; */
-  
+
   /* background-color: white; */
 }
 
-video{
+video {
   display: block;
   width: 90%;
   margin: 0 auto;
 }
 
 /* Gamme de produits nutrigood */
-.products-section{
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; 
+.products-section {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")
+    repeat-y;
   background-color: rgba(255, 255, 255, 0.9);
   background-blend-mode: overlay;
- 
 }
 
-h3{
+h3 {
   margin: 0;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
 }
-.product{
-
+.product {
   margin: 0 auto;
   padding-bottom: 1rem;
-  max-width: 50%;
+  width: 50%;
 }
 
-.product-tropical{
+.product-tropical {
 }
 
-.product-img{
+.product-img {
   max-width: 100%;
 }
 
-span{
+span {
   font-weight: bold;
 }
-.detox{
+.detox {
   color: rgb(4, 107, 4);
 }
-.energy{
-  
+.energy {
   color: rgb(137, 15, 153);
 }
 
-.tropical{
-  color: rgb(241, 167, 28);;
+.tropical {
+  color: rgb(241, 167, 28);
 }
 
 /* Partie contact */
-root{
+root {
   --form-bg: #f8f4e5;
   --form-border: #f45702;
   --form-shadow: #dfae4b;
   --form-focus: #f45702;
   --font-size: 12px;
-  --font-face: 'Spartan';
-  --font-color: #2A293E
+  --font-face: "Spartan";
+  --font-color: #2a293e;
 }
-.contact-us{
+.contact-us {
   background-size: cover;
   display: grid;
   justify-items: center;
@@ -155,47 +154,52 @@ root{
   font-family: var(--font-face);
 }
 
-form{
+form {
   width: 70%;
 
   border-top: 10px solid orange;
 }
 
-label, input, textarea{
+label,
+input,
+textarea {
   /* background-color: #f8f4e5; */
   display: block;
   width: 100%;
   font-size: var(--font-size);
   line-height: var(--font-size) * 2;
-  font-family: var(--font-face)
+  font-family: var(--font-face);
 }
 
-input{
-  margin-bottom: var(--font-size) * 2
+input {
+  margin-bottom: var(--font-size) * 2;
 }
-  
-em{
+
+em {
   color: var(--form-border);
-  font-weight: bold}
-  
-input, textarea{
+  font-weight: bold;
+}
+
+input,
+textarea {
   border: none;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   background: var(--form-bg);
   padding-left: 5px;
-  outline: none
+  outline: none;
 }
-  
-input:focus, textarea:focus{
-  border: 2px solid orangered
+
+input:focus,
+textarea:focus {
+  border: 2px solid orangered;
 }
- 
-textarea{
-  resize: none
+
+textarea {
+  resize: none;
 }
-  
-button{
+
+button {
   margin-top: 1rem;
   display: block;
   float: right;
@@ -205,20 +209,20 @@ button{
   background: orange;
   color: white;
   letter-spacing: 2px;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   border-bottom: 2px solid transparent;
-  outline: none
+  outline: none;
 }
-  
-  button:hover{
-    cursor: pointer;
-    background: inherit;
-    color: orange;
-    border-bottom: 2px solid orange
-  }
-  
+
+button:hover {
+  cursor: pointer;
+  background: inherit;
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
 ::selection {
-  background: rgb(255, 199, 184)
+  background: rgb(255, 199, 184);
 }
 
 @media only screen and (min-width: 768px) {
@@ -227,45 +231,40 @@ button{
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  round;
   } */
   /* hero video styling  */
-.logo{
-  width: 10%;
-}
+  .logo {
+    width: 10%;
+  }
 
-video{
-  width: 70%;
-}
+  video {
+    width: 70%;
+  }
 
-/* Gamme de produits nutrigood */
-.products{
-  /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; */
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: overlay;
+  /* Gamme de produits nutrigood */
+  .products {
+    /* background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg")  repeat-y; */
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: overlay;
+  }
 
-}
+  .product {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+    padding-bottom: 2rem;
+    max-width: 100%;
+  }
 
-.product{
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding-bottom: 2rem;
-  max-width: 100%;
-}
+  .energy-img {
+    order: 4;
+  }
 
-.product-img{
-  max-width: 20%
-}
-
-
-.energy-img{
-  order: 4;
-}
-
-p{
-  max-width: 30%;
-  font-size: 2rem;
-}
-/* contact form */
-form{
-  width: 40%;
-}
+  p {
+    max-width: 40%;
+    font-size: 2rem;
+  }
+  /* contact form */
+  form {
+    width: 40%;
+  }
 }
